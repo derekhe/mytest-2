@@ -1,5 +1,6 @@
 input.onButtonPressed(Button.A, function () {
-    if (true) {
+    if (false) {
+        radio.sendString("")
         radio.setGroup(1)
     } else {
         while (true) {
@@ -9,6 +10,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 music.playMelody("- - - - - - - - ", 120)
+led.unplot(0, 0)
 basic.forever(function () {
     led.unplot(0, 0)
 })
